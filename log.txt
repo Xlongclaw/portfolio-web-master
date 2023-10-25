@@ -1,2 +1,4 @@
 >>>> Portfolio app developed using
 > React with typescript
+> tailwindcss
+> react router dom

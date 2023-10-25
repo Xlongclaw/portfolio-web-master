@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-const App:React.FC = () => {
+const App: React.FC = () => {
   return (
-    <div className='font-rubik'>PORTFOLIO</div>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<>HOME</>} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
