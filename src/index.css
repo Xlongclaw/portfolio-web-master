@@ -9,3 +9,12 @@
 body {
   margin: 0;
 }
+
+::-webkit-scrollbar{
+  background-color: black;
+  /* width: 8px; */
+
+}
+::-webkit-scrollbar-thumb{
+  background-color: aquamarine;
+}
