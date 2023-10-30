@@ -36,7 +36,7 @@ const HomeScreen: React.FC = () => {
     };
   }, []);
   return (
-    <div className="bg-gradient-to-r from-black to-custom-gray cursor-cell text-white">
+    <div className="bg-gradient-to-r from-black to-custom-gray cursor-none text-white">
       <NavBar />
       <NavLinksFixed scrollPosition={scrollPosition}/>
       <HeroSection />
@@ -49,6 +49,13 @@ const HomeScreen: React.FC = () => {
           top: `${mousePos.y + scrollPosition - 64}px`,
         }}
         className={`h-32 w-32  absolute bg-teal-500 blur-[8rem] top-0 rounded-full pointer-events-none`}
+      ></div>
+      <div
+        style={{
+          left: `${mousePos.x - 4}px`,
+          top: `${mousePos.y + scrollPosition - 4}px`,
+        }}
+        className={`h-2 w-2  absolute border-2  shadow-2xl top-0 rounded-full pointer-events-none`}
       ></div>
       {/* <SkillsSection/> */}
     </div>
