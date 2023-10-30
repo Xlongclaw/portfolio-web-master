@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-      "rubik":['Rubik', 'sans-serif']
+      "rubik":['Rubik', 'sans-serif'],
+      "oswald":['Oswald','sans-serif']
       },
       colors:{
         'custom-black':'#000000',
@@ -14,6 +15,9 @@ module.exports = {
         'custom-ascent':'#17d3ba',
         'custom-light-gray':'#262626',
         'custom-dark-gray':'#1e1e1e',
+      },
+      backgroundImage:{
+        'about-img-1':''
       }
     },
   },
