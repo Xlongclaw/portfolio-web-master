@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const ProjectSection: React.FC = () => {
   return (
-    <div className="px-16 mb-24 relative flex justify-start tracking-widest mt-44">
+    <div id="projects" className="px-16 mb-24 relative flex justify-start tracking-widest pt-24 mt-20">
       <motion.div
         initial={{ opacity: 0,top:0,rotate:'270deg' }}
         whileInView={{ opacity: 1,top:200, rotate:'270deg', transition: { duration: 1, delay: 0.3 } }}
@@ -18,9 +18,9 @@ const ProjectSection: React.FC = () => {
           SOME OF MY VENTURES OF CREATIVITY.
         </h3>
       </motion.div>
-      <div className="flex flex-wrap gap-8 ml-72">
+      <div className="flex flex-wrap gap-8 ml-72 overflow-y-scroll h-[41.5rem] scroll hide-scroll">
         {MyProjects.map((project, index) => (
-          <ProjectWrapper project={project} />
+          <ProjectWrapper key={index} project={project} />
         ))}
       </div>
     </div>

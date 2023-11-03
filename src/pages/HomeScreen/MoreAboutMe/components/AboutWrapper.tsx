@@ -23,7 +23,7 @@ const AboutWrapper: React.FC<{
         <h5 className="my-4 text-yellow-500 font-semibold text-xs">TECHSTACK</h5>
         <div className="flex flex-wrap justify-center items-center gap-4">
           {images.map((image, index) => (
-            <img
+            <img key={index}
               className="w-16 border border-custom-light-gray p-2"
               src={image}
               alt=""

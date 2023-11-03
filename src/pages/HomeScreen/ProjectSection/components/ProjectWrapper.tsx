@@ -24,15 +24,15 @@ const ProjectWrapper: React.FC<{
         <div className="border border-custom-dark-gray h-12 w-[48%] flex justify-center items-center gap-2">
           <h4 className="text-xs">{project.name}</h4>
         </div>
-        <div className="border border-custom-dark-gray h-12 w-[15%] flex justify-center items-center hover:bg-custom-ascent transition-all duration-300">
+        <a href={project.githubLink} className="border border-custom-dark-gray h-12 w-[15%] flex justify-center items-center hover:bg-custom-ascent transition-all duration-300">
           <Icon.GitHub size={15} />
-        </div>
-        <div className="border border-custom-dark-gray h-12 w-[15%] flex justify-center items-center hover:bg-custom-ascent transition-all duration-300">
+        </a>
+        <a href={project.figmaLink} className="border border-custom-dark-gray h-12 w-[15%] flex justify-center items-center hover:bg-custom-ascent transition-all duration-300">
           <Icon.Figma size={15} />
-        </div>
-        <div className="border border-custom-dark-gray h-12 w-[15%] flex justify-center items-center hover:bg-custom-ascent transition-all duration-300">
+        </a>
+        <a href={project.link} className="border border-custom-dark-gray h-12 w-[15%] flex justify-center items-center hover:bg-custom-ascent transition-all duration-300">
           <Icon.ChevronRight size={15} />
-        </div>
+        </a>
       </div>
     </motion.div>
   );

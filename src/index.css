@@ -9,6 +9,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar{
@@ -18,4 +19,8 @@ body {
 }
 ::-webkit-scrollbar-thumb{
   background-color: aquamarine;
+}
+
+.hide-scroll::-webkit-scrollbar{
+  display: none;
 }

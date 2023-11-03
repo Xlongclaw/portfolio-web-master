@@ -1,36 +1,42 @@
 import React from "react";
 import { Button } from "../../../../common/components";
 import * as Icon from "react-feather";
+import PersonalInfo from "../../../../constants/PersonalInfo";
 
 const HeroInfo: React.FC = () => {
+  const handleAboutPress = () => {
+    const aboutSection = document.getElementById("aboutme");
+    aboutSection?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="flex flex-col py-10">
       <div className="text-5xl tracking-widest">
         <span className=" font-semibold">HELLO</span>,
       </div>
       <div className="text-2xl tracking-widest">
-        MY NAME IS <span className="font-bold">LONGCLAW</span>
+        MY NAME IS <span className="font-bold">{PersonalInfo.name}</span>
       </div>
       <div className="text- mt-6 tracking-widest">
-        I'm a Web Designer and Developer from India, helping companies deliver
-        beautiful, intuitive online experiences through solid research,
-        thoughtfull design an accessible codes.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate illum veritatis, ducimus quia eos expedita? Quia incidunt eveniet sunt aperiam deserunt obcaecati, temporibus officia laudantium dolore aliquam repudiandae! Necessitatibus, consectetur.
+        {PersonalInfo.description}
       </div>
-      <div className="flex mt-6">
+      <button onClick={() => handleAboutPress} className="flex mt-6">
         <Button title="A LITTLE ABOUT ME">
           <Icon.ChevronRight size={18} />
         </Button>
-      </div>
+      </button>
       <div className="flex gap-3 mx-1 mt-5">
-        <Icon.GitHub
-          size={35}
-          className="hover:bg-custom-ascent p-2 transition-all"
-        />
-        <Icon.Linkedin
-          size={35}
-          className="hover:bg-custom-ascent p-2 transition-all"
-        />
+        <a href={PersonalInfo.github}>
+          <Icon.GitHub
+            size={35}
+            className="hover:bg-custom-ascent p-2 transition-all"
+          />
+        </a>
+        <a href={PersonalInfo.linkedin}>
+          <Icon.Linkedin
+            size={35}
+            className="hover:bg-custom-ascent p-2 transition-all"
+          />
+        </a>
       </div>
     </div>
   );

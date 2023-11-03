@@ -4,11 +4,14 @@ import { HomeScreen } from "./pages/HomeScreen";
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter>
+    <div className="overflow-y-hidden">
+
+    <BrowserRouter >
       <Routes>
         <Route path="/" element={<HomeScreen/>} />
       </Routes>
     </BrowserRouter>
+    </div>
   );
 };
 

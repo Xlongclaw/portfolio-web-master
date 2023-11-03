@@ -1,6 +1,7 @@
 import React from "react";
 import { Hamburger, Logo, NavLinks } from "./components";
 import { Button } from "../../../common/components";
+import PersonalInfo from "../../../constants/PersonalInfo";
 
 const NavBar: React.FC = () => {
   return (
@@ -8,9 +9,9 @@ const NavBar: React.FC = () => {
       <NavLinks />
       <Logo />
       <Hamburger />
-      <div className=" min-w-[8rem] md:flex hidden gap-6 justify-center items-center">
+      <a href={`mailto:${PersonalInfo.email}`} className=" min-w-[8rem] md:flex hidden gap-6 justify-center items-center">
         <Button title="HIRE ME" />
-      </div>
+      </a>
     </nav>
   );
 };

@@ -30,7 +30,7 @@ const MoreAboutMe: React.FC = () => {
     }, 500);
   };
   return (
-    <div className="text-white flex flex-col items-center mt-32 mx-16 mb-32 tracking-widest relative">
+    <div id="aboutme" className="text-white flex flex-col items-center mt-32 mx-16 mb-32 tracking-widest relative">
       <h3 className="text-6xl relative font-semibold">
         ABOUT ME<span className="text-custom-ascent">.</span>
       </h3>
