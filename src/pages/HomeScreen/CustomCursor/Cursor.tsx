@@ -6,7 +6,7 @@ const Cursor: React.FC<{
   mousePos: { x: number; y: number };
 }> = ({ scrollPosition, mousePos }) => {
   return (
-      <div>
+      <div className="hidden md:block">
         <div
           style={{
               left: `${mousePos.x - 48}px`,

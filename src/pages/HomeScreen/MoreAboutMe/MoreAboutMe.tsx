@@ -30,11 +30,11 @@ const MoreAboutMe: React.FC = () => {
     }, 500);
   };
   return (
-    <div id="aboutme" className="text-white flex flex-col items-center mt-32 mx-16 mb-32 tracking-widest relative">
-      <h3 className="text-6xl relative font-semibold">
+    <div id="aboutme" className="text-white flex flex-col items-center mt-32 mx-0 md:mx-16 mb-32 tracking-widest relative">
+      <h3 className=" text-4xl md:text-6xl relative font-semibold">
         ABOUT ME<span className="text-custom-ascent">.</span>
       </h3>
-      <h3 className="text-sm mb-16 text-teal-900 font-semibold">
+      <h3 className=" text-xs md:text-sm tracking-normal md:tracking-widest mb-16 text-teal-900 font-semibold">
         A LITTLE MORE INFORMATION ABOUT ME.{" "}
       </h3>
       <motion.div animate={controls} className="relative z-20 w-4/5 mb-16">
