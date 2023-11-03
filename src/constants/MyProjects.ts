@@ -4,49 +4,49 @@ const MyProjects = [
         githubLink:"",
         link:"",
         figmaLink:"",
-        image:require('../common/assets/images/project_img_1.jpg')
+        image:require('../common/assets/images/project_img_1.webp')
     },
     {
         name:"Roco",
         githubLink:"",
         link:"",
         figmaLink:"",
-        image:require('../common/assets/images/project_img_2.jpg')
+        image:require('../common/assets/images/project_img_2.webp')
     },
     {
         name:"Neo",
         githubLink:"",
         link:"",
         figmaLink:"",
-        image:require('../common/assets/images/project_img_3.jpg')
+        image:require('../common/assets/images/project_img_3.webp')
     },
     {
         name:"Zoma",
         githubLink:"",
         link:"",
         figmaLink:"",
-        image:require('../common/assets/images/project_img_4.png')
+        image:require('../common/assets/images/project_img_4.webp')
     },
     {
         name:"Liyu",
         githubLink:"",
         link:"",
         figmaLink:"",
-        image:require('../common/assets/images/project_img_5.png')
+        image:require('../common/assets/images/project_img_5.webp')
     },
     {
         name:"Tota",
         githubLink:"",
         link:"",
         figmaLink:"",
-        image:require('../common/assets/images/project_img_6.png')
+        image:require('../common/assets/images/project_img_6.webp')
     },
     {
         name:"Xerty",
         githubLink:"",
         link:"",
         figmaLink:"",
-        image:require('../common/assets/images/project_img_7.png')
+        image:require('../common/assets/images/project_img_7.webp')
     },
 ]
 export default MyProjects

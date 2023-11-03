@@ -8,7 +8,7 @@ const AboutWrapper: React.FC<{
 }> = ({ title, description, buttonTitle, images }) => {
   return (
     <div  className=" bg-custom-black/0 relative z-10 flex justify-between bg-custom-gray shadow-2xl">
-      <div className=" relative h-[35rem] w-1/3 flex justify-center items-center bg-cover bg-[url('./common/assets/images/about_pic_33.jpg')]">
+      <div className=" relative h-[35rem] w-1/3 flex justify-center items-center bg-cover bg-[url('./common/assets/images/about_pic_33.webp')]">
         <div className="relative h-16">
           <h3 className="font-oswald text-5xl font-medium relative left-[0px] top-[12px] text-custom-ascent">
             {title}
