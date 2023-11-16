@@ -30,14 +30,21 @@ const MoreAboutMe: React.FC = () => {
     }, 500);
   };
   return (
-    <div id="aboutme" className="text-white flex flex-col items-center mt-32 mx-0 md:mx-16 mb-32 tracking-widest relative">
-      <h3 className=" text-4xl md:text-6xl relative font-semibold">
-        ABOUT ME<span className="text-custom-ascent">.</span>
-      </h3>
-      <h3 className=" text-xs md:text-sm tracking-normal md:tracking-widest mb-16 text-teal-900 font-semibold">
-        A LITTLE MORE INFORMATION ABOUT ME.{" "}
-      </h3>
-      <motion.div animate={controls} className="relative z-20 w-4/5 mb-16">
+    <div
+      id="aboutme"
+      className="text-white flex flex-col items-start md:items-center mt-0 md:mt-32 mx-0 md:mx-16 mb-32 tracking-widest relative"
+    >
+      <div className="mx-[8vw] md:mx-0">
+
+        <h3 className=" text-4xl md:text-6xl relative font-semibold">
+          ABOUT ME<span className="text-custom-ascent">.</span>
+        </h3>
+        <h3 className=" text-xs md:text-sm tracking-normal md:tracking-widest mb-6 md:mb-16 text-teal-9 text-custom-ascent/20 font-semibold">
+          A LITTLE MORE INFORMATION ABOUT ME.{" "}
+        </h3>
+      </div>
+      
+      <motion.div animate={controls} className="relative mx-6 md:mx-0 z-20  md:w-4/5 mb-16">
         <AboutWrapper
           buttonTitle={AboutMe[aboutIndex].buttonTitle}
           description={AboutMe[aboutIndex].description}
@@ -65,7 +72,7 @@ const MoreAboutMe: React.FC = () => {
           </button>
         </div>
       </motion.div>
-      <div className="h-52 w-72  absolute bg-teal-500 blur-[10rem] right-0 bottom-0 rounded-full"></div>
+      <div className="h-52 w-72  absolute bg-teal-5 bg-custom-ascent blur-[10rem] right-0 bottom-0 rounded-full"></div>
     </div>
   );
 };

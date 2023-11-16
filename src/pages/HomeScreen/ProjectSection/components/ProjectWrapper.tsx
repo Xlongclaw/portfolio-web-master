@@ -14,11 +14,11 @@ const ProjectWrapper: React.FC<{
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: {duration:1,delay:0.3} }}
+      whileInView={{ opacity: 1, transition: {duration:0.5} }}
       className="flex flex-col gap-3"
     >
-      <div className="border border-custom-dark-gray h-[60vw] md:h-64 ">
-        <img className="h-[60vw] md:h-64" src={project.image} alt="" />
+      <div className="border border-custom-dark-gray h-[65vw] md:h-60 ">
+        <img className="h-[65vw] md:h-60" src={project.image} alt="" />
       </div>
       <div className="flex justify-between">
         <div className="border border-custom-dark-gray h-12 w-[48%] flex justify-center items-center gap-2">

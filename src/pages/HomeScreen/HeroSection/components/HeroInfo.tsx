@@ -9,14 +9,14 @@ const HeroInfo: React.FC = () => {
     aboutSection?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="flex flex-col py-10">
-      <div className="text-5xl tracking-widest">
-        <span className=" font-semibold">HELLO</span>,
+    <div className="flex flex-col py-10 relative top-[-15rem] md:top-0 z-40 mx-4 md:mx-0">
+      <div className="text-4xl md:text-5xl tracking-widest">
+        <span className="text-custom-ascent md:text-white font-semibold">HELLO</span>,
       </div>
-      <div className="text-2xl tracking-widest">
+      <div className="text-lg md:text-2xl tracking-widest">
         MY NAME IS <span className="font-bold">{PersonalInfo.name}</span>
       </div>
-      <div className="text- mt-6 tracking-widest">
+      <div className="text-xs md:text-base text-white/70 mt-6 tracking-widest">
         {PersonalInfo.description}
       </div>
       <button onClick={() => handleAboutPress} className="flex mt-6">
@@ -28,7 +28,7 @@ const HeroInfo: React.FC = () => {
         <a href={PersonalInfo.github}>
           <Icon.GitHub
             size={35}
-            className="hover:bg-custom-ascent p-2 transition-all"
+            className="bg-custom-ascent md:hover:bg-custom-ascent p-2 transition-all"
           />
         </a>
         <a href={PersonalInfo.linkedin}>

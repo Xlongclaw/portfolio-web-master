@@ -5,7 +5,7 @@ import PersonalInfo from "../../../constants/PersonalInfo";
 
 const NavBar: React.FC = () => {
   return (
-    <nav className="h-16 md:px-16 px-8 bg-gradient-to-l border- border-custom-gray from-custom-gray shadow-2xl to-black text-custom-lite flex  justify-between items-center">
+    <nav className="h-16 md:pl-16 md:pr-16 pl-8 pr-0 bg-black md:bg-gradient-to-l  border-custom-gray from-custom-gray shadow-2xl to-black text-custom-lite flex  justify-between items-center">
       <NavLinks />
       <Logo />
       <Hamburger />

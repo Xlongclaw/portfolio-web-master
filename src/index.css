@@ -19,6 +19,7 @@ body {
 }
 ::-webkit-scrollbar-thumb{
   background-color: aquamarine;
+
 }
 
 .hide-scroll::-webkit-scrollbar{

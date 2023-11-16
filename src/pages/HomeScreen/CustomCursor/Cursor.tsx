@@ -17,7 +17,7 @@ const Cursor: React.FC<{
                 : "block"
             }`,
         }}
-          className={`h-24 w-24  absolute bg-teal-500 blur-[8rem] top-0 rounded-full pointer-events-none`}
+          className={`h-24 w-24  absolute bg-teal-5 bg-custom-ascent blur-[8rem] top-0 rounded-full pointer-events-none`}
         ></div>
         <div
           style={{
